@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebServis_RUIP.Models;
+using WebServis_RUIP.Repozitorij;
 
 namespace WebServis_RUIP.Services
 {
