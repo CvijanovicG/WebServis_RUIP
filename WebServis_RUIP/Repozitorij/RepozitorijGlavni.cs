@@ -27,13 +27,13 @@ namespace WebServis_RUIP.Repozitorij
         public List<KorisnickiPodaciModel> PronadjiKorisnika(PodaciZaPretraguModel podaciZaPretragu)
         {
             List<KorisnickiPodaciModel> rezultat = new List<KorisnickiPodaciModel>();
-            SqlParameter modeParam = new SqlParameter("@JIB", podaciZaPretragu.JIBPoslodavca);
+            SqlParameter modeParam = new SqlParameter("@JIB", podaciZaPretragu.JIBPoslodavca );
             SqlParameter JMBGZaPretraguParam = new SqlParameter("@JMBG", podaciZaPretragu.JMBGOsiguranika ?? "");
             SqlParameter modeParam1 = new SqlParameter("@Datum", podaciZaPretragu.Datum);
             rezultat = _db.QueryProc<KorisnickiPodaciModel>(
                 "spPregledSvihZaposlenjaKodPoslodavcaRUIS",
-                 JMBGZaPretraguParam
-                 , modeParam
+                  modeParam
+                 , JMBGZaPretraguParam
                  , modeParam1
                 ).ToList();
             return rezultat;
