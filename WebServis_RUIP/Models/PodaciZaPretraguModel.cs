@@ -7,8 +7,8 @@ namespace WebServis_RUIP.Models
 {
     public class PodaciZaPretraguModel
     {
-        public string JMBGOsiguranika { get; set; }
-        public string JIBPoslodavca { get; set; }
+        public string JMBG { get; set; }
+        public string JIB  { get; set; }
         public DateTime Datum { get; set; }
        
     }
