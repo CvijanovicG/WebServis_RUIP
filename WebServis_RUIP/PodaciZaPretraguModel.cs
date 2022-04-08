@@ -8,8 +8,8 @@ namespace WebServis_RUIP
 {
     public class PodaciZaPretraguModel
     {
-        public SqlDbType JIBPoslodavca { get; internal set; }
-        public string JMBGOsiguranika { get; internal set; }
-        public SqlDbType Datum { get; internal set; }
+         public SqlDbType Datum { get; internal set; }
+        public string JIB { get; internal set; }
+        public string JMBG { get; internal set; }
     }
 }
